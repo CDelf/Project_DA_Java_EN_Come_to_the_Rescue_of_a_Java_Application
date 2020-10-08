@@ -6,6 +6,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Arraylist of strings containing the list of symptoms. If no data is
+ * available, return an empty List.
+ * 
+ * @return symptoms : a raw listing of all Symptoms obtained from a data source,
+ *         duplicates are possible/probable.
+ * 
+ * @throws IOException
+ */
+
 public class ReadSymptomsFromFile {
 
 	private String filePath;
@@ -19,17 +29,7 @@ public class ReadSymptomsFromFile {
 		this.filePath = filePath;
 	}
 
-	/**
-	 * Arraylist of strings containing the list of symptoms. If no data is
-	 * available, return an empty List.
-	 * 
-	 * @return symptoms : a raw listing of all Symptoms obtained from a data source,
-	 *         duplicates are possible/probable.
-	 * 
-	 * @throws IOException
-	 */
-
-	public List<String> GetSymptom() {
+	public List<String> getSymptom() {
 		ArrayList<String> symptoms = new ArrayList<String>();
 
 		if (filePath != null) {

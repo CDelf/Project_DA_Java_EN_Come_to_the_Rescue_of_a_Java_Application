@@ -8,18 +8,18 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class AnalyticsCounter {
+/**
+ * This is a proposition of correction of Alex's initial code.
+ * 
+ * It works whatever the number of symptoms contained by the file symptoms.txt
+ * and allows the addition of new ones.
+ * 
+ * Exceptions handling is managed.
+ * 
+ * However this code doesn't respect the POO method.
+ */
 
-	/**
-	 * This is a proposition of correction of Alex's initial code.
-	 * 
-	 * It works whatever the number of symptoms contained by the file symptoms.txt
-	 * and allows the addition of new ones.
-	 * 
-	 * Exceptions handling is managed.
-	 * 
-	 * However this code doesn't respect the POO method.
-	 */
+public class AnalyticsCounter {
 
 	public static String filepath = "symptoms.txt"; // This is the file containing the list of Symptoms
 

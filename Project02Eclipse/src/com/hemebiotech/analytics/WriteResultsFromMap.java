@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class WriteResultsFromMap {
+/**
+ * Exports the list of symptoms in natural ordrer with their occurences into a
+ * .txt file "results.out"
+ * 
+ * @throws IOException
+ */
 
-	/**
-	 * Exports the list of symptoms in natural ordrer with their occurences into a
-	 * .txt file "results.out"
-	 * 
-	 * @throws IOException
-	 */
+public class WriteResultsFromMap {
 
 	public static void writeResult(Map<String, Integer> mapCounter, List<String> symptoms) throws IOException {
 

@@ -5,6 +5,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * This is the main method wich reads, counts, orders and exports a list of
+ * symptoms from file symptoms.txt
+ * 
+ * @throws Exception
+ */
+
 public class Main {
 
 	static String filepath = new String("symptoms.txt"); // File containing the list of symptoms
@@ -15,16 +22,9 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 
-		/**
-		 * This is the main method wich reads, counts, orders and exports a list of
-		 * symptoms from file symptoms.txt
-		 * 
-		 * @throws Exception
-		 */
-
 		ReadSymptomsFromFile readSymptoms = new ReadSymptomsFromFile(filepath);
 
-		getSymptomsFromFile = readSymptoms.GetSymptom();
+		getSymptomsFromFile = readSymptoms.getSymptom();
 
 		symptomsCounter = SymptomsCounter.mapSymptom(getSymptomsFromFile);
 
